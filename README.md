@@ -22,7 +22,7 @@ Verify: `uv run jupyter kernelspec list` shows `java`.
 
 Edit notebooks in place:
 ```bash
-uv run jupyter lab
+uv run jupyter lab notebooks/
 ```
 
 Or play on throwaway copies (originals untouched, scratch wiped on exit):
@@ -44,6 +44,9 @@ Notebooks work natively. Point interpreter at `.venv/` (`uv sync` created it). J
 ## Structure
 
 ```
-game_of_life.ipynb   # main notebook
-pyproject.toml       # jupyterlab dep for uv
+notebooks/
+  game_of_life.ipynb   # Conway's Game of Life (arrays, loops)
+  fibonacci.ipynb      # Fibonacci: recursion vs iteration
+pyproject.toml         # jupyterlab dep for uv
+run-scratch.sh         # launch lab on throwaway copies
 ```

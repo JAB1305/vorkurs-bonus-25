@@ -7,7 +7,7 @@ SRC="$(dirname "$(realpath "$0")")"
 SCRATCH="${XDG_RUNTIME_DIR:-/tmp}/ijava-scratch-$$"
 
 mkdir -p "$SCRATCH"
-cp "$SRC"/*.ipynb "$SCRATCH"/
+cp "$SRC"/notebooks/*.ipynb "$SCRATCH"/
 trap 'rm -rf "$SCRATCH"' EXIT
 
 echo "Scratch: $SCRATCH"
