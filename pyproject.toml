@@ -1,0 +1,8 @@
+[project]
+name = "bonus-material-26"
+version = "0.1.0"
+description = "Java notebooks (IJava kernel) for Vorkurs 2026 bonus material"
+requires-python = ">=3.10"
+dependencies = [
+    "jupyterlab>=4.0",
+]
